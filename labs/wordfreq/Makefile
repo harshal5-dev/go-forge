@@ -12,7 +12,7 @@ build: vet
 	go build
 
 run: vet
-	go run main.go
+	go run .
 
 clean:
 	go clean
