@@ -13,7 +13,7 @@ func literals() {
 
 	var base10FloatVal float64 = 6.03e55
 	var base16FloatVal float64 = 0x55.44p5
-	var flaotZeroVal float64
+	var floatZeroVal float64
 
 	var longerFloatVal1, longerFloatVal2 float64 = 1_234.4e55, 1_2_3_4.e5
 
@@ -44,7 +44,7 @@ func literals() {
 
 	fmt.Println("Floating Literal Decimal value:", base10FloatVal)
 	fmt.Println("Floating Literal Hexadecimal value:", base16FloatVal)
-	fmt.Println("Floating Literal Zero value:", flaotZeroVal)
+	fmt.Println("Floating Literal Zero value:", floatZeroVal)
 	fmt.Println("Floating Literal longer integer literals:", longerFloatVal1, longerFloatVal2)
 
 	fmt.Println("-----------------------------")
