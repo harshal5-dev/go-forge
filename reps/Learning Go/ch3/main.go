@@ -4,5 +4,7 @@ import "fmt"
 
 func main() {
 	fmt.Println("Composite Types")
-	arrays()
+	array()
+	slice()
+	lenCap()
 }
