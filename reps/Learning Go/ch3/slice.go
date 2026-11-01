@@ -35,10 +35,6 @@ func slice() {
 	fmt.Println("c => ", c, "len => ", len(c), "cap => ", cap(c))
 	fmt.Println("d => ", d, "len => ", len(d), "cap => ", cap(d))
 	fmt.Println("e => ", e, "len => ", len(e), "cap => ", cap(e))
-	if d == nil {
-		fmt.Println("d is equal to nil")
-	}
-	if e == nil {
-		fmt.Println("e is equal to nil")
-	}
+	fmt.Println("Is d equal to nil =>", d == nil)
+	fmt.Println("Is e equal to nil =>", e == nil)
 }
