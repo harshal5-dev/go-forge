@@ -7,4 +7,5 @@ func main() {
 	array()
 	slice()
 	lenCap()
+	slicingSlices()
 }
