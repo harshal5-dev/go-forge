@@ -1,0 +1,14 @@
+# Environment variables
+.env
+.env.*
+
+# Go project files
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+/bin/
+/vendor/

@@ -6,6 +6,7 @@ import (
 	"log"
 
 	"github.com/harshal5-dev/go-forge/projects/rabbitmq/complex-json/models"
+	"github.com/harshal5-dev/go-forge/projects/rabbitmq/config"
 	amqp "github.com/rabbitmq/amqp091-go"
 )
 
@@ -16,8 +17,10 @@ func failOnError(err error, msg string) {
 }
 
 func main() {
-	amqpURI := "amqp://admin:12345@localhost:5672/"
-	conn, err := amqp.Dial(amqpURI)
+	cfg, err := config.GetConfig("../.env")
+	failOnError(err, "Failed to load env variables")
+
+	conn, err := amqp.Dial(cfg.AmqpURI)
 	failOnError(err, "Failed to connect to rabbitMQ")
 	defer conn.Close()
 
