@@ -4,8 +4,8 @@ import "fmt"
 
 func main() {
 	fmt.Println("Composite Types")
-	array()
+	// array()
 	slice()
-	lenCap()
-	slicingSlices()
+	// 	lenCap()
+	// 	slicingSlices()
 }

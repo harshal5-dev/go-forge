@@ -7,7 +7,6 @@ func main() {
 	literals()
 	complexNumber()
 	typeConversion()
-	fmt.Println("------------------------------")
 	exercise1()
 	exercise2()
 	exercise3()
